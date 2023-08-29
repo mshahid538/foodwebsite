@@ -1,0 +1,4 @@
+On ByName, You can search recipes by name.
+On Categories, you can find recipes by Category Name.
+On Area, You can find rrecipes by area-wise.
+ON Ingredients, you can find recipes by the ingredient name.

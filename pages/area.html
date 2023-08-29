@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area | FlavorFusion</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+    <!-- Header -->
+    <header>
+        <a href="/"><img src="../img/logo.png" alt=""  class="img_logo_png"></a>
+        <div>
+            <a href="../pages/searchByname.html">🔍 by Name</a>
+            <a href="../pages/category.html">Categories</a>
+            <a class="active" href="../pages/area.html">Area</a>
+            <a href="../pages/ingredient.html">Ingredients</a>
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+            
+        <!-- Category Section -->
+        <section id="area-list"></section>
+    
+        <!-- Recipe Section -->
+        <section id="area"></section>
+    
+        <!-- Load JavaScript files asynchronously -->
+        <script async src="../js/food-api.js"></script>
+        <script async src="../js/food-widget.js"></script>
+    </main>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

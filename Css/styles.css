@@ -1,0 +1,372 @@
+/* Styles for the food recipes website */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-section {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #8A1E53;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .cta-button:hover {
+    background-color: #6C143D;
+  }
+  
+  .call-to-action {
+    background-color: #838383;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 1rem;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 100%;
+  
+  }
+  
+  header a {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  header a,
+  header div a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  
+    &:hover {
+      color: #8A1E53;
+      scale: 1.02;
+    }
+  }
+  
+  .active {
+    color: #8A1E53 !important;
+  }
+  
+  main {
+    padding: 12rem 0;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-container input {
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: #ccc 10px 10px 10px;
+  }
+  
+  .search-container input:hover {
+    border-color: #8A1E53;
+  }
+  
+  .search-container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #recipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .recipe {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: none;
+    padding: 2rem;
+  }
+  
+  .recipe img {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+  }
+  
+  .recipe-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .youtube-icon {
+    width: 50px !important;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #category-list {
+    margin: 2rem 10rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .category-list {
+    background: #8a1e53;
+    border-radius: 35%;
+    padding: 0.5rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  
+    &:hover {
+      background: #838383;
+      cursor: pointer;
+    }
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: #838383;
+    border-radius: 1rem;
+    cursor:pointer;
+  
+    &:hover {
+      scale:1.02
+    }
+  }
+  
+  .category img {
+    size: cover;
+    border-radius: 1rem;
+  }
+  
+  .category h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #8A1E53
+  }
+  
+  #area-list {
+    margin: 2rem 10rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .area-list {
+    background: #8a1e53;
+    border-radius: 35%;
+    padding: 0.5rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  
+    &:hover {
+      background: #838383;
+      cursor: pointer;
+    }
+  }
+  
+  .area {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: #838383;
+    border-radius: 1rem;
+    cursor:pointer;
+  
+    &:hover {
+      scale:1.02
+    }
+  }
+  
+  .area img {
+    size: cover;
+    border-radius: 1rem;
+  }
+  
+  .area h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #8A1E53
+  }
+  
+  #ingredient-list {
+    margin: 2rem 10rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #ingredient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .ingred-list {
+    background: #8a1e53;
+    border-radius: 35%;
+    padding: 0.5rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  
+    &:hover {
+      background: #838383;
+      cursor: pointer;
+    }
+  }
+  
+  .ingredient {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: #838383;
+    border-radius: 1rem;
+    cursor:pointer;
+  
+    &:hover {
+      scale:1.02
+    }
+  }
+  
+  .ingredient img {
+    size: cover;
+    border-radius: 1rem;
+  }
+  
+  .ingredient h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #8A1E53
+  }
+  
+  /* Language */
+  .goog-te-combo {
+    display: block!important;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: #ccc 10px 10px 10px;
+    &:hover {
+      border-color: #8A1E53;
+    }
+  }
+  
+  .goog-te-gadget {
+    font-size: 0!important;
+  }
+  
+  .goog-te-gadget span {
+    display: none;
+  }
+  #google_translate_element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .img_logo_png {
+    width: 30%;
+  }
+  .Welcome {
+    color: #8a1e53;
+  }
+  .search_by_name{
+    width: 1.2rem;
+  }
+  
